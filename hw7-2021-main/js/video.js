@@ -59,7 +59,7 @@ document.querySelector("#slider").addEventListener("input", function(){
 
     let newVolume = this.value / 100;
     video.volume = newVolume;
-    document.querySelector("#volume-info").innerHTML = (newVolume * 100) + "%";
+    document.querySelector("#volume").innerHTML = (newVolume * 100) + "%";
     console.log("New volume is:", newVolume);
 });
 
@@ -72,5 +72,4 @@ document.querySelector("#orig").addEventListener("click", function(){
     console.log("Original button clicked");
     video.classList.remove("oldSchool");
 });
-
 
